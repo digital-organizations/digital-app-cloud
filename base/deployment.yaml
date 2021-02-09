@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: digital-app-cloud
+spec:
+  selector:
+    matchLabels:
+      app: digital-app-cloud
+  template:
+    metadata:
+      labels:
+        app: digital-app-cloud
+    spec:
+      containers:
+      - name: app
+        image: foo/bar:latest
+        ports:
+        - name: http
+          containerPort: 8080
+          protocol: TCP

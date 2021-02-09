@@ -21,4 +21,4 @@ images:
   newName: foo/bar
   newTag: 3.4.5
 
-namePrefix: prd-
+namePrefix: dev-
